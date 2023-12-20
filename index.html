@@ -2,29 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+        
 </head>
 <body>
-    
 
-    <label for="">Select your Mobile</label>
-    <select name="referrer" id="hear-about">
-        <option selected="" value="">Select your Options</option>
-        <option value="">Friends</option>
-        <option value="">Family Members</option>
-        <option value="">Social Media</option>
-        <option value="">Pamphlet</option>
-      </select>
+<div class="search-container">
+    <h2>Product Search</h2>
+    <form id="searchForm">
+        <label for="searchBy">Search By:</label>
+        <select id="searchBy">
+            <option value="brand">Brand</option>
+            <option value="model">Model</option>
+            <option value="price">Price</option>
+            <option value="camera">Camera</option>
+        </select>
+        <br>
+        <label for="searchInput">Search Term:</label>
+        <input type="text" id="searchInput" placeholder="Enter your search term">
+        <br>
+        <button type="button" onclick="search()">Search</button>
+    </form>
+</div>
 
 
-
-
-    
-    
-    
-    <script src="app.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

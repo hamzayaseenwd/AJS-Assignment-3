@@ -91,5 +91,21 @@ let arr = [
     },
 ]
 
+console.log(arr);
 
+
+    
+
+    function search() {
+        
+        const searchBy = document.getElementById("searchBy").value.toLowerCase();
+
+        
+        const searchInput = document.getElementById("searchInput").value.toLowerCase();
+
+        
+        const results = arr.filter((item) => item[searchBy].toLowerCase().includes(searchInput));
+
+        console.log("Search Results:", results);
+    }
 
